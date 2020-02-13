@@ -127,5 +127,39 @@ header {
 
 .contact__wrapper {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
+}
+
+.contact__form-input {
+    margin-bottom: 1em;
+    padding: 0.5em;
+}
+
+.contact__form-input input, .contact__form-input textarea {
+    padding: 0.5em;
+    width: 250px;
+}
+
+.contact__form-input textarea {
+    height: 180px;
+}
+
+.contact__info {
+    padding: 0 1em;
+    text-align: center;
+}
+
+address {
+    margin: 2em 0;
+}
+
+.contact__number {
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin: 0.5em 0;;
+}
+
+.contact__social-media {
+    margin-top: 1.5em;
 }
