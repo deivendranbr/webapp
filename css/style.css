@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "FuturaNextW05-Book",BlinkMacSystemFont,-apple-system,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+header {
+    height: 700px;
+    background-color: #eeeeee;
+}
+
+.menu-container {
+    padding-top: 60px;
+    display: flex;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    justify-content: space-around;
+}
+
+.menu-container__menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-container__menu a:hover {
+    color: blue;
+}
+
+.container {
+    padding: 3em 10em 3em 10em;
+    text-align: center;
+}
+
+.full-header {
+    background-color: #eeeeee;
+    padding: 2em;
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+}
+
+.product__details {
+    padding: 2em 2em;;
+}
+
+.product__list {
+    list-style-image: url('../asset/bullet.png');
+}
+
+.product__list li {
+    margin: 10px;
+}
+
+.product__button, .portfolio__list-button {
+    background-color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 1px solid black;;
+}
+
+.team-container__left-arrow {
+    position: relative;
+    left: -50%;
+    top: 320px;
+    cursor: pointer;
+}
+
+.team-container__right-arrow {
+    position: relative;
+    left: 50%;
+    top: 320px;
+    cursor: pointer;
+}
+
+.portfolio {
+    text-align: center;
+}
+
+.portfolio__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.portfolio__list-item {
+    width: 100%;
+}
