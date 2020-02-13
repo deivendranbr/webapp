@@ -163,3 +163,13 @@ address {
 .contact__social-media {
     margin-top: 1.5em;
 }
+
+footer {
+    background-color: #3c5d69;
+    color: white;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
