@@ -18,7 +18,7 @@ body {
 
 header {
     height: 700px;
-    background-color: #eeeeee;
+    background-color: #CDCDCD;
 }
 
 .menu-container {
@@ -41,7 +41,7 @@ header {
 }
 
 .container {
-    padding: 3em 10em 3em 10em;
+    padding: 3em 1em 3em 1em;
     text-align: center;
 }
 
@@ -68,6 +68,10 @@ header {
     margin: 10px;
 }
 
+.products__image {
+    width: 100%;
+}
+
 .product__button, .portfolio__list-button {
     background-color: white;
     border: none;
@@ -79,24 +83,23 @@ header {
     border: 1px solid black;
 }
  
-/* @media only screen and (min-width: 768px) {
-    .products {
-        flex-direction: row;
-    }
-} */
-
 .team-container__left-arrow {
     position: relative;
-    left: -50%;
-    top: 320px;
+    left: -35%;
+    top: 160px;
     cursor: pointer;
 }
 
 .team-container__right-arrow {
     position: relative;
-    left: 50%;
-    top: 320px;
+    left: 35%;
+    top: 160px;
     cursor: pointer;
+}
+
+.team-container__teams-profile {
+    display: flex;
+    flex-direction: column;
 }
 
 .portfolio {
@@ -105,7 +108,7 @@ header {
 
 .portfolio__list {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-content: center;
 }
 
@@ -113,9 +116,14 @@ header {
     width: 100%;
 }
 
+.portfolio__list-item img {
+    width: 100%;
+}
+
 .pricing__plan {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .pricing__plan-list {
@@ -149,6 +157,10 @@ header {
     flex-direction: column;
 }
 
+.contact__form {
+    width: 100%;
+}
+
 .contact__form-input {
     margin-bottom: 1em;
     padding: 0.5em;
@@ -156,7 +168,8 @@ header {
 
 .contact__form-input input, .contact__form-input textarea {
     padding: 0.5em;
-    width: 250px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .contact__form-input textarea {
@@ -184,17 +197,20 @@ address {
 }
 
 footer {
-    background-color: #3c5d69;
+    background-color: #565D67;
     color: white;
     height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .skills__progress {
-    padding: 6em 2em;
+    padding: 2em 2em;
+    display: flex;
+    flex-direction: column;
 }
 
 .skills__title {
@@ -210,7 +226,7 @@ progress[value] {
      appearance: none;
   
     width: 100%;
-    height: 40px;
+    height: 1.5em;
 }
 
 progress[value]::-webkit-progress-bar {
@@ -219,4 +235,80 @@ progress[value]::-webkit-progress-bar {
 
 progress[value]::-webkit-progress-value {
     background-color: #7799ef; 
+}
+
+@media only screen and (min-width: 768px) {
+    .products {
+        flex-direction: row;
+    }
+
+    .product__details {
+        width: 50%;
+    }
+
+    .products__image {
+        width: 50%;
+    }
+
+    .container {
+        padding: 3em 10em 3em 10em;
+    }
+
+    .pricing__plan {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .contact__wrapper {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .contact__form {
+        width: 50%;
+    }
+
+    .contact__info {
+        text-align: left;
+        padding: 0 4em;
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+    .team-container__teams-profile {
+        flex-direction: row;
+    }
+
+    .team-container__left-arrow {
+        left: -50%;
+    }
+
+    .team-container__right-arrow {
+        left: 50%;
+    }
+
+    .skills__progress {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .skils__progress-item {
+        width: 50%;
+        box-sizing: border-box;
+        padding: 1em;
+    }
+
+    .portfolio__list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .portfolio__list-item {
+        width: 33%;
+        border: 1px solid white;
+    }
+
+    .product__details {
+        text-align: left;
+    }
 }

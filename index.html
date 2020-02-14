@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>PS Task</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="./css/style.css">
     </head>
     <body>
@@ -12,7 +13,7 @@
                     <a href="#">Home</a>
                     <a href="#products">Products</a>
                     <a href="#portfolio">Portfolio</a>
-                    <a href="#Plans">Plans</a>
+                    <a href="#plans">Plans</a>
                     <a href="#contact">Contact</a>
                 </nav>
             </div>
@@ -20,8 +21,8 @@
         </header>
 
         <section id="products" class="products container">
-            <div>
-                <img src="./asset/product.png" alt="Smiley face" height="750">
+            <div class="products__image">
+                <img src="./asset/product.png" alt="Smiley face">
             </div>
             <div class="product__details">
                 <h2>OUR PRODUCT</h2>
@@ -40,23 +41,23 @@
             <div class="team-container__teams">
                 <h2>OUR TEAM</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <img class="team-container__left-arrow" src="./asset/left-arrow.png" alt="left arrow" height="150" width="50">
-                <img class="team-container__right-arrow" src="./asset/right-arrow.png" alt="right arrow" height="150" width="50">
+                <img class="team-container__left-arrow" src="./asset/left-arrow.png" alt="left arrow">
+                <img class="team-container__right-arrow" src="./asset/right-arrow.png" alt="right arrow">
                 <div class="team-container__teams-profile">
                     <div class="team-container__profile-list">
-                        <img src="./asset/profile-image.png" alt="profile" height="400" width="250">
+                        <img src="./asset/profile-image.png" alt="profile">
                         <h3>ANNE HATHAWAY</h3>
                         <span>CEO / MARKETING GURU</span>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </div>
                     <div class="team-container__profile-list">
-                        <img src="./asset/profile-image.png" alt="profile" height="400" width="250">
+                        <img src="./asset/profile-image.png" alt="profile">
                         <h3>ANNE HATHAWAY</h3>
                         <span>CEO / MARKETING GURU</span>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </div>
                     <div class="team-container__profile-list">
-                        <img src="./asset/profile-image.png" alt="profile" height="400" width="250">
+                        <img src="./asset/profile-image.png" alt="profile">
                         <h3>ANNE HATHAWAY</h3>
                         <span>CEO / MARKETING GURU</span>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -116,36 +117,36 @@
             <h2>OUR PORTFOLIO</h2>
             <div class="portfolio__list">
                 <div class="portfolio__list-item">
-                    <img src="./asset/portfolio.png" alt="profile" height="500" width="500">
+                    <img src="./asset/portfolio.png" alt="profile">
                 </div>
                 <div class="portfolio__list-item">
-                    <img src="./asset/portfolio.png" alt="profile" height="500" width="500">
+                    <img src="./asset/portfolio.png" alt="profile">
                 </div>
                 <div class="portfolio__list-item">
-                    <img src="./asset/portfolio.png" alt="profile" height="500" width="500">
+                    <img src="./asset/portfolio.png" alt="profile">
                 </div>
                 <div class="portfolio__list-item">
-                    <img src="./asset/portfolio.png" alt="profile" height="500" width="500">
+                    <img src="./asset/portfolio.png" alt="profile">
                 </div>
                 <div class="portfolio__list-item">
-                    <img src="./asset/portfolio.png" alt="profile" height="500" width="500">
+                    <img src="./asset/portfolio.png" alt="profile">
                 </div>
                 <div class="portfolio__list-item">
-                    <img src="./asset/portfolio.png" alt="profile" height="500" width="500">
+                    <img src="./asset/portfolio.png" alt="profile">
                 </div>
             </div>
             <button class="portfolio__list-button">BIG BUTTON</button>
         </section>
 
         <h2 class="full-header">Pricing Tables</h2>
-        <section id="Plans" class="pricing container">
+        <section id="plans" class="pricing container">
             <h2>SELECT A PLAN</h2>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
             <div class="pricing__plan">
                 <div class="pricing__plan-list">
                     <h3>PERSONAL</h3>
                     <div>$9/Month</div>
-                    <button class="pricing__plan-button  pricing__plan-button--disabled">YOUR PLAN</button>
+                    <button type="button" class="pricing__plan-button  pricing__plan-button--disabled">YOUR PLAN</button>
                     <div class="pricing__plan-features"><b>Free</b> feature one</div>
                     <div class="pricing__plan-features"><b>Unlimited</b> feature two</div>
                     <div class="pricing__plan-features"><b>Unlimited</b> feature three</div>
@@ -183,6 +184,7 @@
                     <div class="contact__form-input"><input type="text" name="name" value="" placeholder="Your Name"></div>
                     <div class="contact__form-input"><input type="email" name="email" value="" placeholder="Your Email"></div>
                     <div class="contact__form-input"><textarea value="" placeholder="Your Message"></textarea></div>
+                    <button type="button">SEND</button>
                 </form>
                 <div class="contact__info">
                     <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry</span>
