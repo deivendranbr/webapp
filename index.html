@@ -6,20 +6,25 @@
         <link rel="stylesheet" type="text/css" href="./css/style.css">
     </head>
     <body>
+        <!-- Header start -->
         <header>
             <div class="menu-container">
                 <div class="menu-container__logo">LOGO</div>
-                <nav class="menu-container__menu">
-                    <a href="#">Home</a>
-                    <a href="#products">Products</a>
-                    <a href="#portfolio">Portfolio</a>
-                    <a href="#plans">Plans</a>
-                    <a href="#contact">Contact</a>
+                <nav id="nav" class="menu-container__menu">
+                    <a class="menu-container__menu-item" href="#">Home</a>
+                    <a class="menu-container__menu-item" href="#products">Products</a>
+                    <a class="menu-container__menu-item" href="#portfolio">Portfolio</a>
+                    <a class="menu-container__menu-item" href="#plans">Plans</a>
+                    <a class="menu-container__menu-item" href="#contact">Contact</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <img src="./asset/menu.png" alt="Smiley face" height="20" width="30">
+                      </a>
                 </nav>
             </div>
-            <!-- <img src="./asset/dashboard.png" alt="Smiley face" height="700" width="100%"> -->
         </header>
+        <!-- Header end -->
 
+        <!-- Products section start -->
         <section id="products" class="products container">
             <div class="products__image">
                 <img src="./asset/product.png" alt="Smiley face">
@@ -35,7 +40,9 @@
                 <button class="product__button">BIG BUTTON</button>
             </div>
         </section>
+        <!-- product section ends -->
 
+        <!-- Teams section starts -->
         <h2 class="full-header">Team Components</h2>
         <section id="teams" class="team-container container">
             <div class="team-container__teams">
@@ -65,7 +72,9 @@
                 </div>
             </div>
         </section>
+        <!-- Teams section ends -->
 
+        <!-- skills section -->
         <h2 class="full-header">Experience Components</h2>
         <section class="skills container">
             <div class="skils__container">
@@ -74,7 +83,7 @@
             </div>
         </section>
 
-        <h2 class="full-header"></h2>
+        <h2 class="reduced-header"></h2>
         <section class="skills container">
             <div class="skills__container">
                 <h2>WE GOT SKILLS!</h2>
@@ -85,39 +94,41 @@
                             <div>WEB DESIGN</div>
                             <div>90%</div>
                         </div>
-                        <progress max="100" value="80"></progress>
+                        <progress max="100" value="90"></progress>
                     </div>
                     <div class="skils__progress-item">
                         <div class="skills__title">
                             <div>GRAPHIC DESIGN</div>
-                            <div>90%</div>
+                            <div>70%</div>
                         </div>
-                        <progress max="100" value="80"></progress>
+                        <progress max="100" value="70"></progress>
                     </div>
                     <div class="skils__progress-item">
                         <div class="skills__title">
                             <div>HTML/CSS</div>
-                            <div>90%</div>
+                            <div>75%</div>
                         </div>
-                        <progress max="100" value="80"></progress>
+                        <progress max="100" value="75"></progress>
                     </div>
                     <div class="skils__progress-item">
                         <div class="skills__title">
                             <div>UI / UX</div>
-                            <div>90%</div>
+                            <div>85%</div>
                         </div>
-                        <progress max="100" value="80"></progress>
+                        <progress max="100" value="85"></progress>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- profolio section starts -->
         <h2 class="full-header"></h2>
         <section id="portfolio" class="portfolio">
             <h2>OUR PORTFOLIO</h2>
             <div class="portfolio__list">
                 <div class="portfolio__list-item">
                     <img src="./asset/portfolio.png" alt="profile">
+                    <div class="portfoli_list-item-hover"></div>
                 </div>
                 <div class="portfolio__list-item">
                     <img src="./asset/portfolio.png" alt="profile">
@@ -137,7 +148,9 @@
             </div>
             <button class="portfolio__list-button">BIG BUTTON</button>
         </section>
+        <!-- profolio section ends -->
 
+        <!-- pricing section starts -->
         <h2 class="full-header">Pricing Tables</h2>
         <section id="plans" class="pricing container">
             <h2>SELECT A PLAN</h2>
@@ -175,7 +188,9 @@
                 </div>
             </div>
         </section>
+        <!-- pricing section ends -->
 
+        <!-- contact section starts -->
         <h2 class="full-header">Contact Components</h2>
         <section id="contact" class="contact container">
             <h2>GET IN TOUCH</h2>
@@ -184,7 +199,7 @@
                     <div class="contact__form-input"><input type="text" name="name" value="" placeholder="Your Name"></div>
                     <div class="contact__form-input"><input type="email" name="email" value="" placeholder="Your Email"></div>
                     <div class="contact__form-input"><textarea value="" placeholder="Your Message"></textarea></div>
-                    <button type="button">SEND</button>
+                    <button class="contact__form-button" type="button">SEND</button>
                 </form>
                 <div class="contact__info">
                     <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry</span>
@@ -199,7 +214,9 @@
                 </div>
             </div>
         </section>
+        <!-- contact section ends -->
 
+        <!-- footer section stars -->
         <footer>
             <h2>LOGO</h2>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
@@ -209,5 +226,18 @@
                 <img src="./asset/footer-facebook-icon.png" alt="facebook-icon" height="50" width="50">
             </div>
         </footer>
+        <!-- contact section ends -->
     </body>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("nav");
+
+          if (x.className === "menu-container__menu") {
+            x.className += " responsive";
+          } else {
+            x.className = "menu-container__menu";
+          }
+        }
+    </script>
 </html>
