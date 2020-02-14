@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
       autoplaySpeed: 2000,
       arrows: true,
       responsive: [{
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
@@ -34,7 +34,7 @@ jQuery(document).ready(function($) {
         autoplaySpeed: 2000,
         arrows: true,
         responsive: [{
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
             slidesToShow: 1,
             slidesToScroll: 1
