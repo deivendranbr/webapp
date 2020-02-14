@@ -709,7 +709,6 @@ width: 0.86em;
 height: 0.86em;
 }
 .c100.blue .bar, .c100.blue .fill {
-/* border-color: #30bae7 !important; */
 border-color: #4A8AF3 !important;
 }
 .c100.blue:hover > span {
