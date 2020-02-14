@@ -17,11 +17,11 @@ body {
 }
 
 header {
-    background-color: #CDCDCD;
+    background-color: white;
 }
 
 .menu-container {
-    padding-top: 60px;
+    padding: 40px;
     display: flex;
     position: sticky;
     position: -webkit-sticky;

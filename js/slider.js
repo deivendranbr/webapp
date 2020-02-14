@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-    $('.slider').slick({
+    $('.carousel__slider').slick({
       dots: true,
       infinite: true,
       speed: 500,
