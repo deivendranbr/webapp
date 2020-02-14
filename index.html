@@ -10,17 +10,18 @@
                 <div class="menu-container__logo">LOGO</div>
                 <nav class="menu-container__menu">
                     <a href="#">Home</a>
-                    <a href="#">Products</a>
-                    <a href="#">Portfolio</a>
-                    <a href="#">Plans</a>
-                    <a href="#">Contact</a>
+                    <a href="#products">Products</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#Plans">Plans</a>
+                    <a href="#contact">Contact</a>
                 </nav>
             </div>
+            <!-- <img src="./asset/dashboard.png" alt="Smiley face" height="700" width="100%"> -->
         </header>
 
-        <section class="products container">
+        <section id="products" class="products container">
             <div>
-                <img src="./asset/product.png" alt="Smiley face" height="750" width="500">
+                <img src="./asset/product.png" alt="Smiley face" height="750">
             </div>
             <div class="product__details">
                 <h2>OUR PRODUCT</h2>
@@ -35,7 +36,7 @@
         </section>
 
         <h2 class="full-header">Team Components</h2>
-        <section class="team-container container">
+        <section id="teams" class="team-container container">
             <div class="team-container__teams">
                 <h2>OUR TEAM</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
@@ -43,23 +44,23 @@
                 <img class="team-container__right-arrow" src="./asset/right-arrow.png" alt="right arrow" height="150" width="50">
                 <div class="team-container__teams-profile">
                     <div class="team-container__profile-list">
-                        <img src="./asset/profile-image.png" alt="profile" height="500" width="250">
-                        <h3>ANNE HATHAWAY</h3>
-                        <span>CEO / MARKETING GURU</span>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </div>
-                    <!-- <div class="team-container__profile-list">
-                        <img src="./asset/profile-image.png" alt="profile" height="500" width="250">
+                        <img src="./asset/profile-image.png" alt="profile" height="400" width="250">
                         <h3>ANNE HATHAWAY</h3>
                         <span>CEO / MARKETING GURU</span>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </div>
                     <div class="team-container__profile-list">
-                        <img src="./asset/profile-image.png" alt="profile" height="500" width="250">
+                        <img src="./asset/profile-image.png" alt="profile" height="400" width="250">
                         <h3>ANNE HATHAWAY</h3>
                         <span>CEO / MARKETING GURU</span>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </div> -->
+                    </div>
+                    <div class="team-container__profile-list">
+                        <img src="./asset/profile-image.png" alt="profile" height="400" width="250">
+                        <h3>ANNE HATHAWAY</h3>
+                        <span>CEO / MARKETING GURU</span>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -74,14 +75,44 @@
 
         <h2 class="full-header"></h2>
         <section class="skills container">
-            <div class="skils__container">
+            <div class="skills__container">
                 <h2>WE GOT SKILLS!</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <div class="skills__progress">
+                    <div class="skils__progress-item">
+                        <div class="skills__title">
+                            <div>WEB DESIGN</div>
+                            <div>90%</div>
+                        </div>
+                        <progress max="100" value="80"></progress>
+                    </div>
+                    <div class="skils__progress-item">
+                        <div class="skills__title">
+                            <div>GRAPHIC DESIGN</div>
+                            <div>90%</div>
+                        </div>
+                        <progress max="100" value="80"></progress>
+                    </div>
+                    <div class="skils__progress-item">
+                        <div class="skills__title">
+                            <div>HTML/CSS</div>
+                            <div>90%</div>
+                        </div>
+                        <progress max="100" value="80"></progress>
+                    </div>
+                    <div class="skils__progress-item">
+                        <div class="skills__title">
+                            <div>UI / UX</div>
+                            <div>90%</div>
+                        </div>
+                        <progress max="100" value="80"></progress>
+                    </div>
+                </div>
             </div>
         </section>
 
         <h2 class="full-header"></h2>
-        <section class="portfolio">
+        <section id="portfolio" class="portfolio">
             <h2>OUR PORTFOLIO</h2>
             <div class="portfolio__list">
                 <div class="portfolio__list-item">
@@ -107,7 +138,7 @@
         </section>
 
         <h2 class="full-header">Pricing Tables</h2>
-        <section class="pricing container">
+        <section id="Plans" class="pricing container">
             <h2>SELECT A PLAN</h2>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
             <div class="pricing__plan">
@@ -145,7 +176,7 @@
         </section>
 
         <h2 class="full-header">Contact Components</h2>
-        <section class="contact container">
+        <section id="contact" class="contact container">
             <h2>GET IN TOUCH</h2>
             <div class="contact__wrapper">
                 <form class="contact__form">
