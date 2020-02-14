@@ -4,6 +4,8 @@
         <title>PS Task</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" type="text/css" href="./css/progressbar.css">
+        <link rel="stylesheet" type="text/css" href="./css/slider.css">
     </head>
     <body>
         <!-- Header start -->
@@ -23,6 +25,15 @@
             </div>
         </header>
         <!-- Header end -->
+
+        <section>
+            <div class="slider">
+                <img src="./asset/dashboard1.jpg" />
+                <img src="./asset/dashboard1.jpg" />
+                <img src="./asset/dashboard1.jpg" />
+                <img src="./asset/dashboard1.jpg" />
+            </div>
+        </section>
 
         <!-- Products section start -->
         <section id="products" class="products container">
@@ -48,23 +59,41 @@
             <div class="team-container__teams">
                 <h2>OUR TEAM</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <img class="team-container__left-arrow" src="./asset/left-arrow.png" alt="left arrow">
-                <img class="team-container__right-arrow" src="./asset/right-arrow.png" alt="right arrow">
+                <!-- <img class="team-container__left-arrow" src="./asset/left-arrow.png" alt="left arrow">
+                <img class="team-container__right-arrow" src="./asset/right-arrow.png" alt="right arrow"> -->
                 <div class="team-container__teams-profile">
                     <div class="team-container__profile-list">
-                        <img src="./asset/profile-image.png" alt="profile">
+                        <img class="team-container__profile-image" src="./asset/profile-image.png" alt="profile">
                         <h3>ANNE HATHAWAY</h3>
                         <span>CEO / MARKETING GURU</span>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </div>
                     <div class="team-container__profile-list">
-                        <img src="./asset/profile-image.png" alt="profile">
+                        <img class="team-container__profile-image" src="./asset/profile-image.png" alt="profile">
                         <h3>ANNE HATHAWAY</h3>
                         <span>CEO / MARKETING GURU</span>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </div>
                     <div class="team-container__profile-list">
-                        <img src="./asset/profile-image.png" alt="profile">
+                        <img class="team-container__profile-image" src="./asset/profile-image.png" alt="profile">
+                        <h3>ANNE HATHAWAY</h3>
+                        <span>CEO / MARKETING GURU</span>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                    <div class="team-container__profile-list">
+                        <img class="team-container__profile-image" src="./asset/profile-image.png" alt="profile">
+                        <h3>ANNE HATHAWAY</h3>
+                        <span>CEO / MARKETING GURU</span>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                    <div class="team-container__profile-list">
+                        <img class="team-container__profile-image" src="./asset/profile-image.png" alt="profile">
+                        <h3>ANNE HATHAWAY</h3>
+                        <span>CEO / MARKETING GURU</span>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                    <div class="team-container__profile-list">
+                        <img class="team-container__profile-image" src="./asset/profile-image.png" alt="profile">
                         <h3>ANNE HATHAWAY</h3>
                         <span>CEO / MARKETING GURU</span>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -80,6 +109,48 @@
             <div class="skils__container">
                 <h2>WE GOT SKILLS!</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <div class="skills__progress">
+                    <div class="skills__progress-circle">
+                        <div class="c100 p90 blue">
+                            <span>90%</span>
+                            <div class="slice">
+                               <div class="bar"></div>
+                               <div class="fill"></div>
+                            </div>
+                        </div>
+                        <div>WEB DESIGN</div>
+                    </div>
+                    <div class="skills__progress-circle">
+                        <div class="c100 p70 blue">
+                            <span>70%</span>
+                            <div class="slice">
+                               <div class="bar"></div>
+                               <div class="fill"></div>
+                            </div>
+                        </div>
+                        <div>GRAPHIC DESIGN</div>
+                    </div>
+                    <div class="skills__progress-circle">
+                        <div class="c100 p75 blue">
+                            <span>75%</span>
+                            <div class="slice">
+                               <div class="bar"></div>
+                               <div class="fill"></div>
+                            </div>
+                        </div>
+                        <div>HTML/CSS</div>
+                    </div>
+                    <div class="skills__progress-circle">
+                        <div class="c100 p85 blue">
+                            <span>85%</span>
+                            <div class="slice">
+                               <div class="bar"></div>
+                               <div class="fill"></div>
+                            </div>
+                        </div>
+                        <div>UI / UX</div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -229,6 +300,8 @@
         <!-- contact section ends -->
     </body>
 
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/slider.js"></script>
     <script>
         function myFunction() {
           var x = document.getElementById("nav");

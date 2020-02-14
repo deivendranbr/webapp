@@ -17,7 +17,6 @@ body {
 }
 
 header {
-    height: 700px;
     background-color: #CDCDCD;
 }
 
@@ -106,6 +105,10 @@ header {
 .team-container__teams-profile {
     display: flex;
     flex-direction: column;
+}
+
+.team-container__profile-image {
+    margin: auto;
 }
 
 .portfolio {
@@ -317,6 +320,12 @@ progress[value]::-webkit-progress-value {
         box-sizing: border-box;
         padding: 1em;
     }
+
+    /* .skills__progress-circle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
 
     .portfolio__list {
         flex-direction: row;
