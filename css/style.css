@@ -344,8 +344,6 @@ progress[value]::-webkit-progress-value {
         border: 1px solid white;
     }
 
-    
-
     .product__details {
         text-align: left;
     }
@@ -438,9 +436,4 @@ progress[value]::-webkit-progress-value {
     .menu-container__toggle {
         display: none;
     }
-
-    /* .menu-container__logo:hover,
-    .menu-container__menu-item:hover {
-        color: rgba(255, 255, 255, 1);
-    } */
 }
