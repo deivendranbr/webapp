@@ -129,6 +129,10 @@ header {
     width: 100%;
 }
 
+.portfolio__list-item:hover .portfoli_list-item-hover {
+    background-color: #565D67;
+}
+
 .pricing__plan {
     display: flex;
     flex-direction: column;
@@ -340,10 +344,6 @@ progress[value]::-webkit-progress-value {
         position: relative;
         top: -40%;
         transition: background-color 2s ease-in-out;
-    }
-
-    .portfoli_list-item-hover:hover {
-        background-color: #565D67;
     }
 
     .product__details {
