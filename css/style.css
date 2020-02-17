@@ -367,7 +367,7 @@ progress[value]::-webkit-progress-value {
 }
 
 .menu-container__main-nav.active {
-    background-color: #CDCDCD;
+    background-color: #ECEDEF;
 }
 
 .menu-container__menu-item,
@@ -378,6 +378,14 @@ progress[value]::-webkit-progress-value {
 .menu-container__main-nav li {
     text-align: center;
     margin: 15px auto;
+}
+
+.menu-container__main-nav li:last-child {
+    padding-bottom: 0.5em;
+}
+
+.menu-container__main-nav li:first-child {
+    padding-top: 0.5em;
 }
 
 .menu-container__logo {
