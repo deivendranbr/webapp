@@ -137,7 +137,6 @@ header {
 
 .pricing__plan-list {
     border: 1px solid black;
-    margin-right: 20px;
     margin-bottom: 20px;
     padding: 2em;
 }
@@ -281,6 +280,10 @@ progress[value]::-webkit-progress-value {
         justify-content: space-evenly;
     }
 
+    .pricing__plan-list {
+        margin-right: 20px;
+    }
+
     .contact__wrapper {
         flex-direction: row;
         justify-content: space-evenly;
@@ -312,6 +315,7 @@ progress[value]::-webkit-progress-value {
     .skills__progress {
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .skils__progress-item {
