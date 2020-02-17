@@ -363,7 +363,7 @@ progress[value]::-webkit-progress-value {
     display: none;
     padding: 0;
     position: absolute;
-    width: 100%;
+    right: 0;
 }
 
 .menu-container__main-nav.active {
