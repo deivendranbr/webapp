@@ -362,6 +362,8 @@ progress[value]::-webkit-progress-value {
     list-style-type: none;
     display: none;
     padding: 0;
+    position: absolute;
+    width: 100%;
 }
 
 .menu-container__main-nav.active {
@@ -414,8 +416,13 @@ progress[value]::-webkit-progress-value {
         align-items: center;
     }
 
+    .menu-container__main-nav.active {
+        background-color:white;
+    }
+
     .menu-container__main-nav {
         display: flex;
+        margin: 0;
         margin-right: 30px;
         flex-direction: row;
         justify-content: flex-end;
@@ -436,4 +443,17 @@ progress[value]::-webkit-progress-value {
     .menu-container__toggle {
         display: none;
     }
+
+    .menu-container__main-nav li:last-child {
+        padding-bottom: 0;
+    }
+    
+    .menu-container__main-nav li:first-child {
+        padding-top: 0;
+    }
+}
+
+/**/
+.carousel__slider {
+    z-index: -10;
 }
