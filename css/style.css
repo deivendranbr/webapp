@@ -133,6 +133,14 @@ header {
     background-color: #565D67;
 }
 
+.portfoli_list-item-hover {
+    width: 100%;
+    height: 40%;
+    position: relative;
+    top: -40%;
+    transition: background-color 2s ease-in-out;
+}
+
 .pricing__plan {
     display: flex;
     flex-direction: column;
@@ -235,6 +243,11 @@ footer {
     padding: 2em 2em;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.skils__progress-item {
+    width: 100%;
 }
 
 .skills__title {
@@ -338,13 +351,7 @@ progress[value]::-webkit-progress-value {
         border: 1px solid white;
     }
 
-    .portfoli_list-item-hover {
-        width: 100%;
-        height: 40%;
-        position: relative;
-        top: -40%;
-        transition: background-color 2s ease-in-out;
-    }
+    
 
     .product__details {
         text-align: left;
