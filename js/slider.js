@@ -34,9 +34,9 @@ jQuery(document).ready(function($) {
         autoplaySpeed: 2000,
         arrows: true,
         responsive: [{
-        breakpoint: 768,
+        breakpoint: 1224,
         settings: {
-            slidesToShow: 1,
+            slidesToShow: 2,
             slidesToScroll: 1
         }
         },

@@ -275,7 +275,7 @@ progress[value]::-webkit-progress-value {
 }
 
 /*styles for above 768px screens (desktop, laptop)*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1224px) {
     .products {
         flex-direction: row;
     }
