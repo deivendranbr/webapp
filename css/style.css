@@ -366,6 +366,10 @@ progress[value]::-webkit-progress-value {
     padding: 0;
 }
 
+.menu-container__main-nav.active {
+    background-color: #CDCDCD;
+}
+
 .menu-container__menu-item,
 .menu-container__logo {
     text-decoration: none;
