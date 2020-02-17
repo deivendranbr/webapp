@@ -20,12 +20,9 @@ header {
 }
 
 .menu-container {
-    padding: 40px;
-    display: flex;
+    padding: 1em 0;
     position: sticky;
     position: -webkit-sticky;
-    top: 0;
-    justify-content: space-between;
 }
 
 .menu-container__menu .menu-container__menu-item {
@@ -297,10 +294,6 @@ progress[value]::-webkit-progress-value {
         justify-content: space-evenly;
     }
 
-    .pricing__plan-list {
-        margin-right: 20px;
-    }
-
     .contact__wrapper {
         flex-direction: row;
         justify-content: space-evenly;
@@ -367,35 +360,75 @@ progress[value]::-webkit-progress-value {
 }
 
 /*Nav bar styles*/
-.menu-container__menu .icon {
-  display: none;
+.menu-container__main-nav {
+    list-style-type: none;
+    display: none;
+    padding: 0;
 }
-  
-  
-@media screen and (max-width: 768px) {
-    .menu-container__menu a {
+
+.menu-container__menu-item,
+.menu-container__logo {
+    text-decoration: none;
+}
+
+.menu-container__main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.menu-container__logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.menu-container__toggle {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.active {
+    display: block;
+}
+
+@media screen and (min-width: 1224px) {
+    .menu-container__menu {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    .menu-container__main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .menu-container__main-nav li {
+        margin: 0;
+    }
+
+    .menu-container__menu-item {
+        margin-left: 40px;
+    }
+
+    .menu-container__logo {
+        margin-top: 0;
+    }
+
+    .menu-container__toggle {
         display: none;
     }
-    .menu-container__menu a.icon {
-      display: block;
-    }
-}
-  
-@media screen and (max-width: 768px) {
-    .menu-container__menu.responsive {
-        position: relative;
-        padding: 1.5em 0;
-    }
-    .menu-container__menu.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .menu-container__menu.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-      margin: 0;
-      padding: .5em 1em;
-    }
+
+    /* .menu-container__logo:hover,
+    .menu-container__menu-item:hover {
+        color: rgba(255, 255, 255, 1);
+    } */
 }
