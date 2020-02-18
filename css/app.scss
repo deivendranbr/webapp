@@ -20,22 +20,24 @@ body {
 
 header {
     background-color: white;
-}
 
-.menu-container {
-    padding: 1em 0;
-    position: sticky;
-    position: -webkit-sticky;
-}
+    .menu-container {
+        padding: 1em 0;
+        position: sticky;
+        position: -webkit-sticky;
+    }
 
-.menu-container__menu .menu-container__menu-item {
-    text-decoration: none;
-    color: black;
-    margin: 0 2em;
-}
+    .menu-container__menu {
+        .menu-container__menu-item {
+            text-decoration: none;
+            color: black;
+            margin: 0 2em;
+        }
 
-.menu-container__menu .menu-container__menu-item:hover {
-    border-bottom: 2px solid black;
+        .menu-container__menu-item:hover {
+            border-bottom: 2px solid black;
+        }
+    }
 }
 
 .container {
@@ -58,23 +60,25 @@ header {
 .products {
     display: flex;
     flex-direction: column;
+
+    .product__details {
+        padding: 2em 2em;;
+    }
+
+    .product__list {
+        list-style-image: url('../asset/bullet.png');
+
+        li {
+            margin: 10px;
+        }
+    }
+
+    .products__image {
+        width: 100%;
+    }
 }
 
-.product__details {
-    padding: 2em 2em;;
-}
 
-.product__list {
-    list-style-image: url('../asset/bullet.png');
-}
-
-.product__list li {
-    margin: 10px;
-}
-
-.products__image {
-    width: 100%;
-}
 
 .product__button, .portfolio__list-button {
     background-color: white;
@@ -366,7 +370,7 @@ progress[value]::-webkit-progress-value {
     display: none;
     padding: 0;
     position: absolute;
-    width: 100%;
+    right: 0;
 }
 
 .menu-container__main-nav.active {
