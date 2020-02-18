@@ -11,6 +11,17 @@
         font-style: normal;
 }
 
+@mixin big-button {
+    background-color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 1px solid black;
+} 
+
 body {
     margin: 0;
     padding: 0;
@@ -76,19 +87,16 @@ header {
     .products__image {
         width: 100%;
     }
+
+    .product__button {
+        @include big-button;
+    }
 }
 
 
 
-.product__button, .portfolio__list-button {
-    background-color: white;
-    border: none;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-    border: 1px solid black;
+.portfolio__list-button {
+    @include big-button;
 }
  
 .team-container__left-arrow {
