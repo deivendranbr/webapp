@@ -94,25 +94,6 @@ header {
 }
 
 
-
-.portfolio__list-button {
-    @include big-button;
-}
- 
-.team-container__left-arrow {
-    position: relative;
-    left: -35%;
-    top: 160px;
-    cursor: pointer;
-}
-
-.team-container__right-arrow {
-    position: relative;
-    left: 35%;
-    top: 160px;
-    cursor: pointer;
-}
-
 .team-container__teams-profile {
     display: flex;
     flex-direction: column;
@@ -124,120 +105,130 @@ header {
 
 .portfolio {
     text-align: center;
-}
 
-.portfolio__list {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    margin-bottom: 2em;
-}
+    .portfolio__list {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-bottom: 2em;
+    }
 
-.portfolio__list-item {
-    width: 100%;
-}
+    .portfolio__list-item {
+        width: 100%;
 
-.portfolio__list-item img {
-    width: 100%;
-}
+        img {
+            width: 100%;
+        }
 
-.portfolio__list-item:hover .portfoli_list-item-hover {
-    background-color: #565D67;
-}
+        .portfoli_list-item-hover {
+            width: 100%;
+            height: 40%;
+            position: relative;
+            top: -40%;
+            transition: background-color 2s ease-in-out;
+        }
+    }
 
-.portfoli_list-item-hover {
-    width: 100%;
-    height: 40%;
-    position: relative;
-    top: -40%;
-    transition: background-color 2s ease-in-out;
+    .portfolio__list-item:hover .portfoli_list-item-hover {
+        background-color: #565D67;
+    }
+
+    .portfolio__list-button {
+        @include big-button;
+    }
 }
 
 .pricing__plan {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    .pricing__plan-list {
+        border: 1px solid black;
+        margin-bottom: 20px;
+        padding: 2em;
+        
+        .pricing__plan-button {
+            background-color: #EA6060;
+            color: white;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            margin: 3em 0;
+        }
+    
+        .pricing__plan-button--disabled {
+            background-color: #BFC3C5;
+        }
+
+        .pricing__plan-features {
+            padding: 1em;
+        }
+    }
+
 }
 
-.pricing__plan-list {
-    border: 1px solid black;
-    margin-bottom: 20px;
-    padding: 2em;
-}
-
-.pricing__plan-button {
-    background-color: #EA6060;
-    color: white;
-    border: none;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    margin: 3em 0;
-}
-
-.pricing__plan-button--disabled {
-    background-color: #BFC3C5;
-}
-
-.pricing__plan-features {
-    padding: 1em;
-}
-
-.contact__wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact__form {
-    width: 100%;
-}
-
-.contact__form-input {
-    margin-bottom: 1em;
-    padding: 0.5em;
-}
-
-.contact__form-input input, .contact__form-input textarea {
+@mixin contact-input {
     padding: 0.5em;
     width: 100%;
     box-sizing: border-box;
 }
 
-.contact__form-input textarea {
-    height: 180px;
-}
+.contact__wrapper {
+    display: flex;
+    flex-direction: column;
+    
+    .contact__form {
+        width: 100%;
 
-.contact__info {
-    padding: 1em 1em;
-    text-align: center;
-}
+        .contact__form-input {
+            margin-bottom: 1em;
+            padding: 0.5em;
 
-address {
-    margin: 2em 0;
-}
+            input {
+                @include contact-input;
+            }
+            
+            textarea {
+                @include contact-input;
+                height: 180px;
+            }
+        }
 
-.contact__number {
-    display: block;
-    text-decoration: none;
-    color: black;
-    margin: 0.5em 0;;
-}
+        .contact__form-button {
+            background-color: #EA6060;
+            color: white;
+            border: none;
+            padding: 15px 32px;
+            text-align: left;
+            text-decoration: none;
+            cursor: pointer;
+            border-radius: 2px;
+            margin-left: 0.5em;
+        }
+    }
 
-.contact__social-media {
-    margin-top: 1.5em;
-}
+    .contact__info {
+        padding: 1em 1em;
+        text-align: center;
 
-.contact__form-button {
-    background-color: #EA6060;
-    color: white;
-    border: none;
-    padding: 15px 32px;
-    text-align: left;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 2px;
-    margin-left: 0.5em;
+        address {
+            margin: 2em 0;
+        }
+
+        .contact__number {
+            display: block;
+            text-decoration: none;
+            color: black;
+            margin: 0.5em 0;;
+        }
+        
+        .contact__social-media {
+            margin-top: 1.5em;
+        }
+    }
 }
 
 footer {
