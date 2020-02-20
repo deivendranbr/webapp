@@ -1,8 +1,13 @@
 @import './progressbar';
 @import './slider';
 
+
+$fontName : 'TitilliumText25L-250wt';
+$headerColor : #eeeeee;
+$footerBgColor : #565D67;
+
 @font-face {
-    font-family: 'TitilliumText25L-250wt';
+    font-family: $fontName;
     src:url('../fonts/TitilliumText25L-250wt.ttf.woff') format('woff'),
         url('../fonts/TitilliumText25L-250wt.ttf.svg#TitilliumText25L-250wt') format('svg'),
         url('../fonts/TitilliumText25L-250wt.ttf.eot'),
@@ -25,7 +30,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'TitilliumText25L-250wt';
+    font-family: $fontName;
     font-size: 1em;
 }
 
@@ -57,13 +62,13 @@ header {
 }
 
 .full-header {
-    background-color: #eeeeee;
+    background-color: $headerColor;
     padding: 2em;
     text-align: center;
 }
 
 .reduced-header {
-    background-color: #eeeeee;
+    background-color: $headerColor;
     padding: 0.5em;
     text-align: center;
 }
@@ -258,7 +263,7 @@ header {
 }
 
 footer {
-    background-color: #565D67;
+    background-color: $footerBgColor;
     color: white;
     height: 400px;
     display: flex;
