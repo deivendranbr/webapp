@@ -34,7 +34,7 @@ header {
 
     .menu-container {
         padding: 1em 0;
-        position: sticky;
+        position: relative;
         position: -webkit-sticky;
     }
 
@@ -390,6 +390,8 @@ progress[value]::-webkit-progress-value {
     padding: 0;
     position: absolute;
     right: 0;
+    position: absolute;
+    z-index: 1;
 }
 
 .menu-container__main-nav.active {
