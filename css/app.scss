@@ -131,6 +131,8 @@ header {
 
     .portfolio__list-item {
         width: 100%;
+        overflow: hidden;
+        position: relative;
 
         img {
             width: 100%;
@@ -139,15 +141,21 @@ header {
         .portfoli_list-item-hover {
             width: 100%;
             height: 40%;
-            position: relative;
-            top: -40%;
-            transition: background-color 0.5s ease-in-out;
+            position: absolute;
+            bottom: -125px;
+            background-color: #565D67;
+            transition: bottom 0.5s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
         }
     }
 
     .portfolio__list-item:hover {
         .portfoli_list-item-hover {
-            background-color: #565D67;
+            bottom: 4px;
         }
     }
 
