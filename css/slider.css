@@ -1,9 +1,6 @@
 .slider {
     margin: 0 auto;
   }
-  .slick-slide {
-    margin: 0 5px;
-  }
   .slick-list {
     margin: 0px -5px 0px -5px;
   }
@@ -13,11 +10,15 @@
     right: 12px;
     width: 47px;
     height: 75px;
-    background-image: url("http://maggiesadler.com/wp-content/uploads/2015/10/left-right-arrow.png");
+    /* background-image: url("http://maggiesadler.com/wp-content/uploads/2015/10/left-right-arrow.png"); */
+    background-image: url("../asset/right-arrow.png");
     background-size: 95px;
+    background-position-x: center;
   }
   .carousel button.slick-next, .carousel button.slick-next:hover {
-    top: 41%;
+    top: 70%;
+    left: 50%;
+    transform: scale(0.3);
   }
   button.slick-prev, button.slick-prev:hover {
     position: absolute;
@@ -26,21 +27,21 @@
     z-index: 1;
     width: 47px;
     height: 75px;
-    background-image: url("http://maggiesadler.com/wp-content/uploads/2015/10/left-right-arrow.png");
+    /* background-image: url("http://maggiesadler.com/wp-content/uploads/2015/10/left-right-arrow.png"); */
+    background-image: url("../asset/left-arrow.png");
     background-size: 95px;
-        background-position-x: right;
+    background-position-x: center;
   }
   .carousel button.slick-prev, .carousel button.slick-prev:hover {
-    top: 41%;
+    top: 70%;
+    left: 48%;
+    transform: scale(0.3);
   }
   .slick-prev:before, .slick-next:before {
     font-size: 70px;
     color: #EA8496;
     line-height: inherit;
     font-weight: bold;
-  }
-  .slider img {
-    height: 324px;
   }
   
   /* Slick Slider Styles -- Provided by https://kenwheeler.github.io/slick/ */
@@ -287,7 +288,7 @@
   .slick-dots
   {
       position: absolute;
-      bottom: -45px;
+      bottom: 0;
   
       display: block;
   
@@ -342,7 +343,7 @@
   .slick-dots li button:before
   {
       font-family: 'slick';
-      font-size: 6px;
+      font-size: 40px;
       line-height: 20px;
   
       position: absolute;

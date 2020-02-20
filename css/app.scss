@@ -118,6 +118,7 @@ header {
     margin: auto;
 }
 
+
 .portfolio {
     text-align: center;
 
@@ -140,12 +141,14 @@ header {
             height: 40%;
             position: relative;
             top: -40%;
-            transition: background-color 2s ease-in-out;
+            transition: background-color 0.5s ease-in-out;
         }
     }
 
-    .portfolio__list-item:hover .portfoli_list-item-hover {
-        background-color: #565D67;
+    .portfolio__list-item:hover {
+        .portfoli_list-item-hover {
+            background-color: #565D67;
+        }
     }
 
     .portfolio__list-button {
@@ -474,9 +477,4 @@ progress[value]::-webkit-progress-value {
     .menu-container__main-nav li:first-child {
         padding-top: 0;
     }
-}
-
-/**/
-.carousel__slider {
-    z-index: -10;
 }
