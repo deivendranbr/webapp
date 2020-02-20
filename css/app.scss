@@ -77,10 +77,25 @@ header {
     }
 
     .product__list {
-        list-style-image: url('../asset/bullet.png');
+        list-style-type: none;
+        padding: 0;
 
         li {
             margin: 10px;
+        }
+
+        li::before{
+            content: '';
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            -moz-border-radius: 7.5px;
+            -webkit-border-radius: 7.5px;
+            border-radius: 7.5px;
+            background-color: #CDCDCD;
+            position: relative;
+            top: 2px;
+            left: -7px;
         }
     }
 
@@ -281,14 +296,14 @@ progress[value]::-webkit-progress-value {
 @media only screen and (min-width: 1224px) {
     .products {
         flex-direction: row;
-    }
-
-    .product__details {
-        width: 50%;
-    }
-
-    .products__image {
-        width: 50%;
+        
+        .product__details {
+            width: 50%;
+        }
+    
+        .products__image {
+            width: 50%;
+        }
     }
 
     .container {
@@ -303,17 +318,17 @@ progress[value]::-webkit-progress-value {
     .contact__wrapper {
         flex-direction: row;
         justify-content: space-evenly;
-    }
-
-    .contact__form {
-        width: 50%;
-    }
-
-    .contact__info {
-        text-align: left;
-        padding: 0 4em;
-        width: 50%;
-        box-sizing: border-box;
+        
+        .contact__form {
+            width: 50%;
+        }
+    
+        .contact__info {
+            text-align: left;
+            padding: 0 4em;
+            width: 50%;
+            box-sizing: border-box;
+        }
     }
 
     .team-container__teams-profile {
@@ -340,14 +355,16 @@ progress[value]::-webkit-progress-value {
         padding: 1em;
     }
 
-    .portfolio__list {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .portfolio__list-item {
-        width: 33%;
-        border: 1px solid white;
+    .portfolio {
+        .portfolio__list {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    
+        .portfolio__list-item {
+            width: 33%;
+            border: 1px solid white;
+        }
     }
 
     .product__details {
