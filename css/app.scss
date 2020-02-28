@@ -205,6 +205,7 @@ header {
     padding: 0.5em;
     width: 100%;
     box-sizing: border-box;
+    border: 1px solid #a19a9a;
 }
 
 .contact__wrapper {
@@ -302,6 +303,14 @@ footer {
     display: flex;
     justify-content: space-around;
     font-size: 1.5em;
+}
+
+.small-seperator {
+    border-top: 2em solid #eeeeee;
+}
+
+.large-seperator {
+    border-top: 4em solid #eeeeee;
 }
 
 progress[value] {

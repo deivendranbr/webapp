@@ -367,4 +367,10 @@
       opacity: .75;
       color: black;
   }
+
+  @media only screen and (max-width: 1224px) {
+    .carousel button.slick-next, .carousel button.slick-prev {
+        display: none !important;
+    }
+  }
   

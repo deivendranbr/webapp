@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>PS Task</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,10 +42,10 @@
         <!-- carousel section -->
         <section class="carousel">
             <div class="carousel__slider slider">
-                <img src="https://via.placeholder.com/1428x600.png?text=Slider 1" />
-                <img src="https://via.placeholder.com/1428x600.png?text=Slider 2" />
-                <img src="https://via.placeholder.com/1428x600.png?text=Slider 3" />
-                <img src="https://via.placeholder.com/1428x600.png?text=Slider 4" />
+                <img alt="slider image" src="./asset/slider1.png" />
+                <img alt="slider image" src="./asset/slider2.png" />
+                <img alt="slider image" src="./asset/slider3.png" />
+                <img alt="slider image" src="./asset/slider4.png" />
             </div>
         </section>
 
@@ -166,8 +166,7 @@
             </div>
         </section>
 
-        <h2 class="reduced-header"></h2>
-        <section class="skills container">
+        <section class="skills container small-seperator">
             <div class="skills__container">
                 <h2>WE GOT SKILLS!</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
@@ -205,8 +204,7 @@
         </section>
 
         <!-- profolio section starts -->
-        <h2 class="full-header"></h2>
-        <section id="portfolio" class="portfolio">
+        <section id="portfolio" class="portfolio large-seperator">
             <h2>OUR PORTFOLIO</h2>
             <div class="portfolio__list">
                 <div class="portfolio__list-item">
@@ -304,7 +302,7 @@
                 <form class="contact__form">
                     <div class="contact__form-input"><input type="text" name="name" value="" placeholder="Your Name"></div>
                     <div class="contact__form-input"><input type="email" name="email" value="" placeholder="Your Email"></div>
-                    <div class="contact__form-input"><textarea value="" placeholder="Your Message"></textarea></div>
+                    <div class="contact__form-input"><textarea placeholder="Your Message"></textarea></div>
                     <button class="contact__form-button" type="button">SEND</button>
                 </form>
                 <div class="contact__info">
@@ -333,16 +331,17 @@
             </div>
         </footer>
         <!-- contact section ends -->
+        
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/slider.js"></script>
+        <script>
+            let navBarToggle = document.getElementById('menu-container__toggle');
+            
+            navBarToggle.addEventListener('click', function () {
+                let mainNav = document.getElementById('js-menu');
+                mainNav.classList.toggle('active');
+            });
+        </script>
     </body>
 
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/slider.js"></script>
-    <script>
-        let navBarToggle = document.getElementById('menu-container__toggle');
-        
-        navBarToggle.addEventListener('click', function () {
-            let mainNav = document.getElementById('js-menu');
-            mainNav.classList.toggle('active');
-        });
-    </script>
 </html>
